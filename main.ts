@@ -3,7 +3,9 @@ input.onPinPressed(TouchPin.P0, function () {
     basic.showNumber(randint(0, 100))
     if (Math.sqrt(0) < 25) {
         basic.showIcon(IconNames.Heart)
+        game.addScore(randint(25, 100))
     }
     game.gameOver()
 })
+game.setScore(0)
 basic.showString("Love metron")
